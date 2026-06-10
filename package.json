@@ -1,0 +1,35 @@
+{
+  "name": "medusa-backend-google-plugin",
+  "version": "1.0.0",
+  "description": "Medusa plugin for automatic Google Drive backups, restore, and multi-store deployment",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepare": ""
+  },
+  "keywords": ["medusa", "plugin", "backup", "google-drive", "deployment"],
+  "license": "MIT",
+  "dependencies": {
+    "@medusajs/framework": "^2.13.0",
+    "archiver": "^7.0.0",
+    "googleapis": "^144.0.0",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.0",
+    "@types/node": "^22.0.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/pg": "^8.11.0",
+    "typescript": "^5.6.0"
+  },
+  "peerDependencies": {
+    "@medusajs/framework": "^2.13.0"
+  },
+  "files": [
+    "src/**/*"
+  ]
+}
